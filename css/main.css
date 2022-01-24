@@ -168,13 +168,18 @@ img {
 }
 
 .about-me .about-title {
-  font-size: 30px;
+  font-size: 34px;
   margin-bottom: 1.5em;
   margin-top: 0;
   padding-bottom: 5px;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #1bbacf;
   width: 100%;
   text-transform: uppercase;
+}
+
+.about-me .left-a h2 {
+  font-size: 30px;
+  margin-bottom: 1.5em;
 }
 
 .about-me .left-a {
@@ -189,17 +194,21 @@ img {
 
 .about-me .btn-a button {
   border: none;
-  width: 89px;
-  height: 34px;
-  border-radius: 10px;
-  background: #dade0d;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #00bcd4;
+  -webkit-transition: .4s;
+  transition: .4s;
+  padding: 12px;
+  border-radius: 7px;
 }
 
 .about-me .btn-a button:hover {
-  background: #b8bb0f;
+  background: #1ec7bb;
 }
 
 .about-me .skill ul {
@@ -431,8 +440,8 @@ footer {
   .nav-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    -ms-grid-columns: 73% auto;
+        grid-template-columns: 73% auto;
     background: unset;
   }
   .nav-container header {
@@ -450,6 +459,10 @@ footer {
   section {
     padding: 4em;
   }
+  .content h1 {
+    width: 70%;
+    margin-top: 10%;
+  }
   .social {
     display: block;
   }
@@ -460,7 +473,7 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 7em;
+    width: 5em;
     float: right;
     margin-bottom: 0;
   }
@@ -470,8 +483,8 @@ footer {
   .hero {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    -ms-grid-columns: 73% auto;
+        grid-template-columns: 73% auto;
     background: unset;
     padding: 0;
     position: relative;
@@ -493,6 +506,16 @@ footer {
     margin-left: -44.8%;
     width: 90%;
   }
+  .about-me .a-container .left-a h2 {
+    color: #000;
+  }
+  .about-me .a-container .left-a {
+    text-align: left;
+    font-weight: 300;
+    color: #2e2d2d;
+    line-height: 1.5em;
+    width: 60%;
+  }
 }
 
 @media only screen and (min-width: 1250px) {
@@ -510,7 +533,7 @@ footer {
   }
   .skill .icon {
     width: 50px;
-    height: 100px;
+    height: 50px;
   }
   .contact-me .contact-content {
     width: 80%;
@@ -522,8 +545,8 @@ footer {
     margin-top: 0px;
   }
   .about-me .left-a {
-    font-size: 18px;
-    width: 80%;
+    font-size: 16px;
+    width: 100%;
     font-weight: 400;
     letter-spacing: 0;
   }
